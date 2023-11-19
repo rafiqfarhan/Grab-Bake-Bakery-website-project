@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Grab Bake Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    
+    <style>
+        /* Add your CSS styles for the Cart page here */
+        .cart-item {
+            border: 1px solid #6b8e23;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cart-item-name {
+            flex: 1; /* Takes up the available space */
+        }
+
+        .cart-item-price {
+            margin-left: 20px; /* Add some spacing between name and price */
+        }
+
+        .proceed-button {
+            background-color: #6b8e23;
+            color: #fff;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .discard-button {
+            background-color: #ae1d3a;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 20px;"><strong>Grab Bake Bakery</strong></h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Cartt.html">Cart</a>
+        <a href="Deliveryy.html">Delivery</a>
+        <a href="Paymentt.html">Payment</a>
+        <a href="location.html">Location</a>
+        <a href="About.html">About</a>
+    </nav>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+    <section id="cart">
+        <h2>Cart</h2>
+        <ul id="cart-list">
+            <!-- Cart items will be displayed here by JavaScript -->
+        </ul>
+        <button class="proceed-button" onclick="proceedToAddress()">Proceed</button>
+    </section>
+
+    <footer>
+        &copy; 2023 Grab Bake Bakery
+    </footer>
+
+    <script>
+        // Initialize cart array and retrieve cart data from local storage
+        var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Function to add an item to the cart
+        function addToCart(itemName, itemPrice) {
+            var item = {
+                name: itemName,
+                price: itemPrice
+            };
+            cart.push(item);
+
+            // Save the updated cart in local storage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Update the cart display
+            displayCart();
+        }
+
+        // Function to display the cart
+        function displayCart() {
+            var cartList = document.getElementById('cart-list');
+            cartList.innerHTML = ''; // Clear the existing list
+
+            var totalPrice = 0;
+
+            cart.forEach(function (item, index) {
+                var listItem = document.createElement('li');
+                listItem.textContent = item.name + ' - MYR ' + item.price.toFixed(2);
+                cartList.appendChild(listItem);
+
+                totalPrice += item.price;
+
+                var discardButton = document.createElement('button');
+                discardButton.textContent = 'Discard';
+                discardButton.onclick = function () {
+                    discardFromCart(index);
+                };
+                listItem.appendChild(discardButton);
+            });
+
+            // Display the total price
+            var totalPriceElement = document.createElement('p');
+            totalPriceElement.textContent = 'Total Price: MYR ' + totalPrice.toFixed(2);
+            cartList.appendChild(totalPriceElement);
+        }
+
+        // Function to remove an item from the cart
+        function discardFromCart(index) {
+            cart.splice(index, 1);
+
+            // Save the updated cart in local storage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Update the cart display
+            displayCart();
+        }
+
+      // Function to scroll to the address section
+function proceedToAddress() {
+    // Directly proceed to the address page
+    window.location.href = "Address.html";
+}
+
+
+        // Call displayCart to initially display any existing cart items
+        displayCart();
+    </script>
+</body>
+</html>

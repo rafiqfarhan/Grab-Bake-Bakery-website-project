@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Grab Bake Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        /* Add your CSS styles for the Cart page here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 20px;"><strong>Grab Bake Bakery</strong></h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Cartt.html">Cart</a>
+        <a href="Deliveryy.html">Delivery</a>
+        <a href="Paymentt.html">Payment</a>
+        <a href="location.html">Location</a>
+        <a href="About.html">About</a>
+    </nav>
+    
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    
+
+    <section id="about">
+        <h2>About Grab Bake Bakery</h2>
+        <p>Welcome to Grab Bake Bakery, your go-to spot for delicious treats! Located in (3G, Jalan Perdana 4/5, Pandan Perdana), our cozy bakery is a haven for fresh, high-quality goodies. From mouthwatering cakes to flaky croissants, each bite is a delight. Our bakers craft these treats with care using only the finest ingredients. Come on in, satisfy your sweet cravings, and let Grab Bake Bakery add a sprinkle of joy to your day!</p>
+    </section>
+
+    <div id="success-message">
+        <p>Payment successful! Thank you for your purchase.</p>
+        <span class="close-button" onclick="closeMessage('success-message')">x</span>
+    </div>
+
+    <div id="address-message">
+        <p>Your address has been saved.</p>
+        <span class="close-button" onclick="closeMessage('address-message')">x</span>
+    </div>
+
+    <div id="payment-message">
+        <p>Payment successful! Thank you for your purchase.</p>
+        <span class="close-button" onclick="closeMessage('payment-message')">x</span>
+    </div>  
+
+
+    <footer>
+        &copy; 2023 Grab Bake Bakery
+    </footer>
+</body>
+</html>

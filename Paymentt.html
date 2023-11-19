@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Grab Bake Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        /* Add your CSS styles for the Cart page here */
+    </style>
+</head>
+<body>
+    <header>
+        <img src="your_logo.jpg" alt="Grab Bake Bakery" style="max-width: 100%;">
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="cart.html">Cart</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="payment.html">Payment</a>
+        <a href="location.html">Location</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <section id="payment">
+        <h2>Payment</h2>
+        <div class="payment-options">
+            <form>
+                <label for="nameOnCard">Name On Card:</label>
+                <input type="text" id="nameOnCard" name="nameOnCard" required>
+
+                <label for="postalCode">Postal Code:</label>
+                <input type="text" id="postalCode" name="postalCode" required>
+
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+
+                <button type="button" id="pay-now" onclick="payNow()">Pay Now</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        &copy; 2023 Grab Bake Bakery
+    </footer>
+</body>
+</html>

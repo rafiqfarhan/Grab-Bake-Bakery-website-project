@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address- Grab Bake Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        /* Add your CSS styles for the Cart page here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 20px;"><strong>Grab Bake Bakery</strong></h1>
+    </header>
+    
+
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Cartt.html">Cart</a>
+        <a href="address.html">Delivery</a>
+        <a href="adminlogin.html">Log In</a>
+        <a href="location.html">Location</a>
+        <a href="About.html">About</a>
+    </nav>
+    
+    
+        
+
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    
+
+    <section id="address">
+        <h2>Delivery Address</h2>
+        <form action="payment.php" method="post">
+            <label for="fullName">Full Name:</label>
+            <input type="text" name="fullName" id="" required>
+
+            <label for="addressLine1">Address Line 1:</label>
+            <input type="text" name="addressLine1" id="" required>
+
+            <label for="addressLine2">Address Line 2:</label>
+            <input type="text" name="addressLine2" id="" required>
+
+            <label for="city">City:</label>
+            <input type="text"  name="city" id="" required>
+
+            <label for="postalCode">Postal Code:</label>
+            <input type="text"  name="postalCode" id="" required>
+
+            <label for="notes">Additional Notes:</label>
+            <textarea  name="notes" id="" rows="4"></textarea>
+
+            <button class="btn btn-primary w-100 py-3" type="submit" name="payment" value="payment">Comfirm</button>
+        </form>
+    </section>
+
+
+
+    <footer>
+        &copy; 2023 Grab Bake Bakery
+    </footer>
+</body>
+</html>

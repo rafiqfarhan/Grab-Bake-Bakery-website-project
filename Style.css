@@ -1,0 +1,500 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFF5EE; /* Beige color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Add your existing styles here */
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the background color and font for the body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFF5EE; /* Beige color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header section */
+header {
+    background-color: #B6B6B4; /* Soft color for header */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the navigation menu */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #E5E4E2; /* Soft color for navigation */
+    padding: 10px;
+}
+
+nav a {
+    border: 1px solid #3B3131; /* Border color for options */
+    padding: 10px;
+    margin: 0 10px; /* More space between options */
+    text-decoration: none;
+    color: #3B3131; /* Text color for options */
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color:#3B3131; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+/* Add your CSS styles for the homepage here */
+body {
+    text-align: center; /* Center align the content */
+    padding: 20px; /* Add spacing around the content */
+}
+
+section {
+    padding: 20px;
+}
+
+.title {
+    font-size: 36px;
+    color: #6b8e23;
+    font-weight: bold;
+}
+.homepage-image {
+    max-width: 100%;
+}
+
+
+header {
+    background-color: #d1ccc0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.description {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.homepage-container {
+    padding: 40px; /* Add padding to the container */
+    margin-top: 50px; /* Add top margin for spacing */
+    text-align: center; /* Center align the content */
+    color: #fff; /* Set text color to white for better visibility */
+}
+
+/* Apply styles to the background container */
+.background-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Add a semi-transparent white background for text readability */
+    background-image: url("C:\Users\user\Downloads\WhatsApp Image 2023-11-01 at 23.01.11.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* 100% viewport height for full-screen container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Style the content within the container */
+.content {
+    background-color: rgba(255, 255, 255, 0.7); /* Add a semi-transparent white background for text readability */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Style the heading */
+.content h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+    color: #333; /* Text color */
+}
+
+/* Style the description text */
+.content p {
+    font-size: 18px; /* Adjust the font size as needed */
+    color: #333; /* Text color */
+}
+
+
+/* Styles for the "View Menu" button */
+.content button {
+    background-color: #6b8e23;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.super-large-text {
+    font-size: 48px; /* Increase font size for the title */
+}
+
+.large-text {
+    font-size: 36px; /* Increase font size for the heading */
+}
+
+p {
+    font-size: 18px; /* Increase font size for the description */
+}
+
+.description-text {
+    font-size: 18px; /* Increase font size for the description */
+    margin: 30px 0; /* Add spacing above and below the description */
+}
+
+.view-menu-button {
+    display: inline-block; /* Display the button as a block element */
+    background-color: #6b8e23; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    text-decoration: none; /* Remove underlines from the link */
+    font-weight: bold; /* Make the text bold */
+    margin-top: 20px; /* Add top margin for spacing */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #B6B6B4; /* Set your desired color */
+    padding: 10px;
+    text-align: center;
+    color: #fff; /* Set text color to white for better visibility */
+    z-index: 1000; /* Set a higher z-index to ensure it stays above other elements */
+}
+
+
+/* Footer styles (if needed) */
+footer {
+    background-color: #d1ccc0;
+    padding: 10px;
+    text-align: center;
+}
+
+
+nav a {
+    border: 1px solid #6b8e23; /* Border color for options */
+    padding: 10px;
+    margin: 0 10px; /* More space between options */
+    text-decoration: none;
+    color: #6b8e23; /* Text color for options */
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(3, auto); /* 3 rows */
+    gap: 20px;
+    border: 2px solid #6b8e23; /* Border for menu items */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+}
+
+.menu-item {
+    border: 1px solid #6b8e23;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-right: 10px; /* Add space between menu items */
+}
+
+
+
+.menu-item img {
+    max-width: 100%;
+}
+
+.menu-item button {
+    background-color: #6b8e23;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-item button:hover {
+    background-color: #4b6e17;
+}
+
+.delivery-options, .payment-options {
+    margin-top: 10px;
+}
+
+#location {
+    border: 2px solid #6b8e23; /* Border for location section */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+}
+
+#cart {
+    border: 2px solid #6b8e23; /* Border for cart section */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.cart-item {
+    display: grid;
+    justify-content: space-between;
+    border: 1px solid #6b8e23; /* Add a border for cart items */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.cart-item button {
+    background-color: #ff6b6b; /* Red color for discard button */
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background-color: #d9534f; /* Darker red on hover */
+}
+.menu-item {
+    border: 1px solid #9f5151;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-item button {
+    background-color: #6b8e23;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#buy-now, #checkout {
+    background-color: #6b8e23;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#buy-now:hover, #checkout:hover {
+    background-color: #6b8e23;
+    ;
+}
+
+/* Login Style.css */
+body {
+    background-color: #f0f0f0; /* Background color for the whole page */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header style */
+.header {
+    background-color: #92553b; /* Header background color */
+    text-align: center;
+    padding: 20px;
+    color: #fff; /* Header text color */
+}
+
+/* Input field style */
+.input-group label {
+    display: block;
+    margin: 10px 0;
+    color: #333; /* Input label color */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc; /* Input border color */
+    border-radius: 5px;
+}
+
+/* Submit button style */
+.input-group button {
+    background-color: #92553b; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-group button:hover {
+    background-color: #877823; /* Button background color on hover */
+}
+
+/* Sign up link style */
+p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+p a {
+    color: #9e3e3e; /* Sign-up link color */
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Add your CSS styles for the registration form here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Background color of your website */
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    background-color: #6b8e23; /* Header background color */
+    color: #fff; /* Header text color */
+    padding: 20px;
+}
+
+
+.input-group {
+    margin: 10px 0;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #6b8e23; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #4b6920; /* Button background color on hover */
+}
+
+
+#payment {
+    border: 2px solid #6b8e23; /* Border for payment section */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#payment form {
+    display: grid;
+    gap: 10px;
+}
+
+#payment input {
+    padding: 8px;
+    border: 1px solid #6b8e23;
+    border-radius: 5px;
+}
+
+#pay-now {
+    background-color: #6b8e23;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#address {
+    border: 2px solid #6b8e23; /* Border for address section */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#address form {
+    display: grid;
+    gap: 10px;
+}
+
+#address input {
+    padding: 8px;
+    border: 1px solid #6b8e23;
+    border-radius: 5px;
+}
+
+#confirm-order, #confirm-address {
+    background-color: #6b8e23;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#confirm-order:hover, #confirm-address:hover {
+    background-color: #6b8e23;
+
+}
+
+#success-message, #address-message, #payment-message {
+    display: none;
+    background-color: #6b8e23;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #B6B6B4;
+    padding: 10px;
+    text-align: center;
+}
+
+

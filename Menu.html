@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Grab Bake Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        /* Add your CSS styles for the Menu page here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 20px;"><strong>Grab Bake Bakery</strong></h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Cartt.html">Cart</a>
+        <a href="Deliveryy.html">Delivery</a>
+        <a href="Paymentt.html">Payment</a>
+        <a href="location.html">Location</a>
+        <a href="About.html">About</a>
+    </nav>
+
+    <script>
+        // Define the order function
+        function order(itemName, itemPrice) {
+            alert("Order placed for " + itemName);
+            addToCart(itemName, itemPrice);
+            document.getElementById("cart").scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToSection(sectionId) {
+          document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+
+        function addToCart(itemName, itemPrice) {
+            // Initialize cart array and retrieve cart data from local storage
+            var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            var item = {
+                name: itemName,
+                price: itemPrice
+            };
+            cart.push(item);
+
+            // Save the updated cart in local storage
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+
+    </script>
+
+    <section id="menu">
+        <div class="menu-item">
+            <img src="C:\Users\user\Downloads\BREAD 1.jpeg" alt="Bread 1" width="225" height="225">
+            <h3>Sweet Potato Bun</h3>
+            <p>MYR 4.50</p>
+            <button onclick="order('Sweet Potato Bun', 4.50)">Order</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="C:\Users\user\Downloads\bread2.jpeg" alt="Bread 2" width="225" height="225">
+            <h3>Sausage Bun</h3>
+            <p>MYR 3.00</p>
+            <button onclick="order('Sausage Bun', 3.00)">Order</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="C:\Users\user\Downloads\Bread 4.jpg" alt="Bread 3" width="225" height="225">
+            <h3>Cheese Choc Tart</h3>
+            <p>MYR 1.80</p>
+            <button onclick="order('Cheese Choc Tart', 1.80)">Order</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="C:\Users\user\Downloads\bread 3.jpeg" alt="Bread 4" width="225" height="225">
+            <h3>Croisant</h3>
+            <p>MYR 4.00</p>
+            <button onclick="order('Croisant', 4.00)">Order</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="C:\Users\user\Downloads\bread 5.jpg" alt="Bread 5" width="225" height="225">
+            <h3>Garlic Cheese Bread</h3>
+            <p>MYR 5.50</p>
+            <button onclick="order('Garlic Cheese Bread', 5.50)">Order</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="C:\Users\user\Downloads\bread 6.jpg" alt="Bread 6" width="225" height="225">
+            <h3>Chocolate Chip Bread</h3>
+            <p>MYR 5.50</p>
+            <button onclick="order('Chocolate Chip Bread', 5.50)">Order</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="C:\Users\user\Downloads\bread 7.jpg" alt="Bread 6" width="225" height="225">
+            <h3>Blueberry Muffin</h3>
+            <p>MYR 1.80</p>
+            <button onclick="order('Blueberry Muffin', 1.80)">Order</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="C:\Users\user\Downloads\bread 8.jpeg" alt="Bread 6" width="225" height="225">
+            <h3>Cinnamon Roll</h3>
+            <p>MYR 9.50</p>
+            <button onclick="order('Cinnamon Roll', 9.50)">Order</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="C:\Users\user\Downloads\bread 9.jpg" alt="Bread 6" width="225" height="225">
+            <h3>Apple Pie</h3>
+            <p>MYR 10.90</p>
+            <button onclick="order('Apple Pie', 10.90)">Order</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="C:\Users\user\Downloads\bread 10.webp" alt="Bread 6" width="225" height="225">
+            <h3>Banana Nut Muffins</h3>
+            <p>MYR 2.50</p>
+            <button onclick="order('Banana Nut Muffins', 2.50)">Order</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="C:\Users\user\Downloads\bread 11.jpg" alt="Bread 6" width="225" height="225">
+            <h3>New York Cheese Cake</h3>
+            <p>MYR 10.00</p>
+            <button onclick="order('New York Cheese Cake', 10.00)">Order</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="C:\Users\user\Downloads\bread 12.jpeg" alt="Bread 6" width="225" height="225">
+            <h3>Baguettes</h3>
+            <p>MYR 2.70</p>
+            <button onclick="order('Baguettes', 2.70)">Order</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="C:\Users\user\Downloads\bread 13.jpg" alt="Bread 6" width="225" height="225">
+            <h3>Sourdough Bread</h3>
+            <p>MYR 14.90</p>
+            <button onclick="order('Sourdough Bread', 14.90)">Order</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="C:\Users\user\Downloads\bread 14.jpeg" alt="Bread 6" width="225" height="225">
+            <h3>Chocolate Babka</h3>
+            <p>MYR 9.00</p>
+            <button onclick="order('Chocolate Babka', 9.00)">Order</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="C:\Users\user\Downloads\bread 15.jpg" alt="Bread 6" width="225" height="225">
+            <h3>Chocolate Chip Cookie</h3>
+            <p>MYR 4.00</p>
+            <button onclick="order('Chocolate Chip Cookie', 4.00)">Order</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="C:\Users\user\Downloads\bread 16.jpg" alt="Bread 6" width="225" height="225">
+            <h3>Lemon Bars</h3>
+            <p>MYR 3.40</p>
+            <button onclick="order('Lemon Bars', 3.40)">Order</button>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Grab Bake Bakery
+    </footer>
+</body>
+</html>
+
+
